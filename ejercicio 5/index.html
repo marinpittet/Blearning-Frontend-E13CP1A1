@@ -8,9 +8,11 @@
   </head>
   <body>
     <script>
-      edad = prompt("Ingresa tu edad");
-      if (edad = 18){
+      var edad = parseInt(prompt("Ingresa tu edad"));
+      if (edad >= 18){
           alert("Eres mayor de edad");
+      } else {
+        alert('Eres menor de edad')
       }
     </script>
   </body>

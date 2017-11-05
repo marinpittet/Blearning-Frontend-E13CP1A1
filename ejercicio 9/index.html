@@ -14,12 +14,11 @@ como elementos de una lista ordenada  -->
     <script type="text/javascript">
       var dias = ["lunes", "martes", "miércoles"]
       var parent_tag = document.getElementById('dias');
-      dias.map(function(x){
-        var doc_element = document.createElement("p");
-        node = document.createTextNode("hola");
+        for (var i = 0; i < dias.length; i++){
+        node = document.createTextNode(dias[i]);
+        var doc_element = document.createElement("li");
         doc_element.appendChild(node);
-        parent_tag.appendChild(doc_element);
-      });
+        parent_tag.appendChild(doc_element);}  
     </script>
   </body>
 </html>

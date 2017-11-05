@@ -1,28 +1,57 @@
-<!-- Dentro del siguiente archivo se encuentra una calculadora
-que no está completa. El botón = funciona evaluando la expresión
-que se encuentra en el input.
-
-Se requiere ingresar todos los otros botones de la calculadora
-para que modifiquen el input agregando su valor.
--->
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <input type="text" name="calculator" value="">
-    <button class="btn" type="button" name="button">1</button>
-    <button class="btn" type="button" name="button">+</button>
-    <button class="result" type="button" name="result">=</button>
-    <script type="text/javascript">
-      var result = document.getElementsByName("result")[0];
-      var calculator = document.getElementsByName("calculator")[0];
-      result.onclick = function(){
-        calculator.value = eval(calculator.value)
-      }
-    </script>
-  </body>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>calculadora</title>
+
+	<link rel="stylesheet" href="style.css">
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Calculator</h1>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+		<form>
+			<input id="input" class="col-md-4 col-md-offset-4 input" type="text" name="input" size="16" placeholder="0" value="">
+		</div>
+		<div class="row">
+			<button id="b7" class="col-md-1 col-md-offset-4" type="button">7</button>
+			<button id="b8" class="col-md-1" type="button">8</button>
+			<button id="b9" class="col-md-1" type="button">9</button>
+			<button id="b*" class="col-md-1" type="button">*</button>
+		</div>
+		<div class="row">
+			<button id="b4" class="col-md-1 col-md-offset-4" type="button">4</button>
+			<button id="b5" class="col-md-1" type="button">5</button>
+			<button id="b6" class="col-md-1" type="button">6</button>
+			<button id="b/" class="col-md-1" type="button">/</button>
+		</div>
+		<div class="row">
+			<button id="b1" class="col-md-1 col-md-offset-4" type="button">1</button>
+			<button id="b2" class="col-md-1" type="button">2</button>
+			<button id="b3" class="col-md-1" type="button">3</button>
+			<button id="b-" class="col-md-1" type="button">-</button>
+		</div>
+		<div class="row">
+			<button id="bp" class="col-md-1 col-md-offset-4" type="button">.</button>
+			<button id="b0" class="col-md-1" type="button">0</button>
+			<button id="ca" class="col-md-1" type="button">CA</button>
+			<button id="b+" class="col-md-1" type="button">+</button>
+		</div>
+		<div class="row">
+			<button id="b=" class="col-md-4 col-md-offset-4" type="button">=</button>
+		</div>
+	</form>
+	</div>
+	
+	<script type="text/javascript" src="script.js">
+		
+	</script>
+</body>
 </html>
